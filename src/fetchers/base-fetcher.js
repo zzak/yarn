@@ -60,6 +60,7 @@ export default class BaseFetcher {
         hash,
         dest,
         package: pkg,
+        cached: false,
       };
     });
   }
