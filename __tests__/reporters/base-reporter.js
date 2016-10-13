@@ -5,7 +5,8 @@ import BaseReporter from '../../src/reporters/base-reporter.js';
 
 test('BaseReporter.getTotalTime', () => {
   const reporter = new BaseReporter();
-  expect(reporter.getTotalTime() <= 1).toBeTruthy();
+  const totalTime = reporter.getTotalTime();
+  expect(totalTime <= 1).toBeTruthy();
   reporter.close();
 });
 

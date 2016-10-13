@@ -8,6 +8,8 @@ import map from '../src/util/map.js';
 import * as util from '../src/util/normalize-manifest/util.js';
 import * as fs from '../src/util/fs.js';
 
+jasmine.DEFAULT_TIMEOUT_INTERVAL = 90000;
+
 const nativeFs = require('fs');
 const path     = require('path');
 
